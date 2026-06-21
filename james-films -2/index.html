@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>James Films — Edits That Command Attention</title>
+<meta name="description" content="James Films — premium cinematic video editing for brands, artists, and creators." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===================== LOADER ===================== -->
+<div class="loader" id="loader">
+  <div class="loader__inner">
+    <svg class="loader__mark" viewBox="0 0 200 200" width="120" height="120">
+      <circle class="loader__ring" cx="100" cy="100" r="86" />
+    </svg>
+    <div class="loader__wordmark">
+      <span class="loader__j">J</span><span class="loader__rest">AMES</span>
+      <div class="loader__films">FILMS</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== PROGRESS LINE ===================== -->
+<div class="tension-line" id="tensionLine"></div>
+
+<!-- ===================== NAV ===================== -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#top" class="nav__logo" aria-label="James Films — home">
+      <img src="assets/logo-cropped.png" alt="James Films" class="nav__logo-img" />
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#process">Process</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a href="#contact" class="nav__cta">Start A Project</a>
+    <button class="nav__burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav__mobile" id="navMobile">
+    <a href="#work">Work</a>
+    <a href="#process">Process</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#testimonials">Reviews</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact" class="nav__mobile-cta">Start A Project</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <div class="hero__smoke hero__smoke--1"></div>
+      <div class="hero__smoke hero__smoke--2"></div>
+      <div class="hero__glow"></div>
+      <div class="hero__grain"></div>
+    </div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow" data-reveal>Cinematic Video Editing Studio</p>
+      <h1 class="hero__headline" data-reveal>
+        <span class="line">EDITS THAT</span>
+        <span class="line hero__headline--accent">COMMAND<span class="hero__headline-glow"> ATTENTION</span></span>
+      </h1>
+      <p class="hero__sub" data-reveal>
+        Transforming raw footage into cinematic stories that captivate audiences,
+        build brands, and drive results.
+      </p>
+      <div class="hero__ctas" data-reveal>
+        <a href="#work" class="btn btn--primary">
+          <span>View My Work</span>
+        </a>
+        <a href="#contact" class="btn btn--ghost">
+          <span>Start A Project</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">
+      <span>SCROLL</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===================== STATS ===================== -->
+  <section class="stats" id="stats">
+    <div class="stats__inner">
+      <div class="stat" data-count="150">
+        <div class="stat__number"><span class="stat__value">0</span><span class="stat__plus">+</span></div>
+        <div class="stat__label">Projects Delivered</div>
+      </div>
+      <div class="stat" data-count="40">
+        <div class="stat__number"><span class="stat__value">0</span><span class="stat__plus">M+</span></div>
+        <div class="stat__label">Views Generated</div>
+      </div>
+      <div class="stat" data-count="60">
+        <div class="stat__number"><span class="stat__value">0</span><span class="stat__plus">+</span></div>
+        <div class="stat__label">Brands &amp; Artists</div>
+      </div>
+      <div class="stat" data-count="98">
+        <div class="stat__number"><span class="stat__value">0</span><span class="stat__plus">%</span></div>
+        <div class="stat__label">Client Retention</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WORK / PORTFOLIO ===================== -->
+  <section class="work" id="work">
+    <div class="section-head">
+      <p class="section-head__eyebrow" data-reveal>Selected Work</p>
+      <h2 class="section-head__title" data-reveal>THE REEL SPEAKS<br/>FOR ITSELF</h2>
+    </div>
+
+    <div class="work__filters" id="workFilters" data-reveal></div>
+
+    <div class="work__grid" id="workGrid"></div>
+  </section>
+
+  <!-- ===================== PROCESS ===================== -->
+  <section class="process" id="process">
+    <div class="section-head">
+      <p class="section-head__eyebrow" data-reveal>How It Works</p>
+      <h2 class="section-head__title" data-reveal>FROM FOOTAGE<br/>TO FINAL CUT</h2>
+    </div>
+
+    <div class="process__timeline" id="processTimeline">
+      <div class="process__line"></div>
+
+      <div class="process__step" data-reveal>
+        <div class="process__marker">01</div>
+        <h3>Discovery Call</h3>
+        <p>We talk through your goals, audience, and the story you're trying to tell — before a single clip is touched.</p>
+      </div>
+
+      <div class="process__step" data-reveal>
+        <div class="process__marker">02</div>
+        <h3>Footage Review</h3>
+        <p>Your raw footage is logged and organized, every usable moment flagged against the story you want told.</p>
+      </div>
+
+      <div class="process__step" data-reveal>
+        <div class="process__marker">03</div>
+        <h3>The First Cut</h3>
+        <p>A structured edit built around pacing, rhythm, and impact — not just trimming clips end to end.</p>
+      </div>
+
+      <div class="process__step" data-reveal>
+        <div class="process__marker">04</div>
+        <h3>Color &amp; Sound</h3>
+        <p>Cinematic color grading and a full sound pass — music, mix, and sound design — bring the edit to life.</p>
+      </div>
+
+      <div class="process__step" data-reveal>
+        <div class="process__marker">05</div>
+        <h3>Revisions</h3>
+        <p>Two structured rounds of revisions, so the final cut matches the vision exactly.</p>
+      </div>
+
+      <div class="process__step" data-reveal>
+        <div class="process__marker">06</div>
+        <h3>Delivery</h3>
+        <p>Final files delivered in every format and aspect ratio you need — ready to publish anywhere.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BEFORE / AFTER ===================== -->
+  <section class="transform" id="transform">
+    <div class="section-head">
+      <p class="section-head__eyebrow" data-reveal>The Difference</p>
+      <h2 class="section-head__title" data-reveal>RAW FOOTAGE.<br/>REFINED STORY.</h2>
+    </div>
+
+    <div class="reveal-slider" id="revealSlider" data-reveal>
+      <div class="reveal-slider__after">
+        <div class="reveal-slider__label reveal-slider__label--after">EDITED</div>
+      </div>
+      <div class="reveal-slider__before" id="revealBefore">
+        <div class="reveal-slider__label reveal-slider__label--before">RAW</div>
+      </div>
+      <div class="reveal-slider__handle" id="revealHandle">
+        <div class="reveal-slider__handle-grip">
+          <span>‹</span><span>›</span>
+        </div>
+      </div>
+      <input type="range" min="0" max="100" value="50" class="reveal-slider__input" id="revealInput" aria-label="Compare raw and edited footage" />
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIALS ===================== -->
+  <section class="testimonials" id="testimonials">
+    <div class="section-head">
+      <p class="section-head__eyebrow" data-reveal>Client Word</p>
+      <h2 class="section-head__title" data-reveal>TRUSTED BY PEOPLE<br/>WHO DEMAND RESULTS</h2>
+    </div>
+
+    <div class="testimonials__slider" id="testimonialsSlider">
+      <div class="testimonials__track" id="testimonialsTrack"></div>
+      <div class="testimonials__dots" id="testimonialsDots"></div>
+    </div>
+  </section>
+
+  <!-- ===================== PRICING ===================== -->
+  <section class="pricing" id="pricing">
+    <div class="section-head">
+      <p class="section-head__eyebrow" data-reveal>Investment</p>
+      <h2 class="section-head__title" data-reveal>CHOOSE YOUR<br/>LEVEL OF IMPACT</h2>
+    </div>
+
+    <div class="pricing__grid">
+      <div class="price-card" data-reveal>
+        <div class="price-card__name">ESSENTIAL</div>
+        <div class="price-card__desc">For creators who need a clean, consistent edit on a regular cadence.</div>
+        <div class="price-card__price"><span>$</span>450<span class="price-card__period">/ video</span></div>
+        <ul class="price-card__features">
+          <li>Up to 5 min final length</li>
+          <li>Color correction</li>
+          <li>Basic sound mix</li>
+          <li>2 rounds of revisions</li>
+          <li>5-day turnaround</li>
+        </ul>
+        <a href="#contact" class="btn btn--outline">Get Started</a>
+      </div>
+
+      <div class="price-card price-card--featured" data-reveal>
+        <div class="price-card__tag">MOST POPULAR</div>
+        <div class="price-card__name">SIGNATURE</div>
+        <div class="price-card__desc">Our most-booked tier — full cinematic treatment for brands and artists.</div>
+        <div class="price-card__price"><span>$</span>950<span class="price-card__period">/ video</span></div>
+        <ul class="price-card__features">
+          <li>Up to 10 min final length</li>
+          <li>Cinematic color grade</li>
+          <li>Full sound design + mix</li>
+          <li>Motion graphics &amp; titles</li>
+          <li>3 rounds of revisions</li>
+          <li>3-day turnaround</li>
+        </ul>
+        <a href="#contact" class="btn btn--primary">Get Started</a>
+      </div>
+
+      <div class="price-card" data-reveal>
+        <div class="price-card__name">STUDIO</div>
+        <div class="price-card__desc">Ongoing partnership for brands producing video at volume, monthly.</div>
+        <div class="price-card__price"><span>$</span>2,800<span class="price-card__period">/ month</span></div>
+        <ul class="price-card__features">
+          <li>4 videos per month</li>
+          <li>Dedicated editor</li>
+          <li>Priority turnaround</li>
+          <li>Unlimited minor revisions</li>
+          <li>Strategy &amp; planning calls</li>
+        </ul>
+        <a href="#contact" class="btn btn--outline">Get Started</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section class="faq" id="faq">
+    <div class="section-head">
+      <p class="section-head__eyebrow" data-reveal>Questions</p>
+      <h2 class="section-head__title" data-reveal>BEFORE YOU<br/>REACH OUT</h2>
+    </div>
+
+    <div class="faq__list" id="faqList"></div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="contact" id="contact">
+    <div class="contact__glow"></div>
+    <div class="contact__inner">
+      <p class="section-head__eyebrow" data-reveal>Let's Build Something</p>
+      <h2 class="contact__title" data-reveal>READY TO MAKE<br/>YOUR NEXT MOVE?</h2>
+      <p class="contact__sub" data-reveal>Tell me about your project and I'll respond within 24 hours.</p>
+
+      <form class="contact__form" id="contactForm" data-reveal>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="cf-name">Name</label>
+            <input type="text" id="cf-name" name="name" required />
+          </div>
+          <div class="form-field">
+            <label for="cf-email">Email</label>
+            <input type="email" id="cf-email" name="email" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="cf-budget">Project Type</label>
+            <select id="cf-budget" name="projectType">
+              <option>Music Video</option>
+              <option>Brand Film</option>
+              <option>Commercial</option>
+              <option>Documentary</option>
+              <option>Social Content</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="cf-date">Target Date</label>
+            <input type="text" id="cf-date" name="targetDate" placeholder="e.g. End of August" />
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="cf-message">Project Details</label>
+          <textarea id="cf-message" name="message" rows="4" required placeholder="Tell me about your footage, your goals, and your timeline."></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full">
+          <span>Send Project Inquiry</span>
+        </button>
+        <p class="contact__status" id="contactStatus" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <img src="assets/logo-cropped.png" alt="James Films" class="footer__logo" />
+      <p>Premium cinematic editing for brands, artists, and creators who refuse to blend in.</p>
+    </div>
+
+    <div class="footer__social" id="footerSocial" aria-label="Social media"></div>
+
+    <div class="footer__bottom">
+      <span>&copy; <span id="footerYear"></span> James Films. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== PROJECT MODAL ===================== -->
+<div class="modal" id="projectModal" aria-hidden="true">
+  <div class="modal__backdrop" id="modalBackdrop"></div>
+  <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal__close" id="modalClose" aria-label="Close">&times;</button>
+    <div class="modal__media">
+      <img id="modalImage" src="" alt="" />
+    </div>
+    <div class="modal__body">
+      <p class="modal__category" id="modalCategory"></p>
+      <h3 class="modal__title" id="modalTitle"></h3>
+      <p class="modal__meta" id="modalMeta"></p>
+      <p class="modal__desc" id="modalDesc"></p>
+      <a href="#" target="_blank" rel="noopener" class="btn btn--primary" id="modalLink"><span>Watch Full Video</span></a>
+    </div>
+  </div>
+</div>
+
+<script src="data/projects.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
